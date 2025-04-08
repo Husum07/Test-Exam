@@ -144,6 +144,7 @@ function() {
   print(plot)
 }
 
+
 # Programmatically alter your API
 #* @plumber
 function(pr) {
