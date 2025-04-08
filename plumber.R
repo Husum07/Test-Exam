@@ -143,3 +143,11 @@ function() {
   # Return the plot
   print(plot)
 }
+
+# Programmatically alter your API
+#* @plumber
+function(pr) {
+  pr %>%
+    # Overwrite the default serializer to return unboxed JSON
+    pr_set_serializer(serializer_unboxed_json())
+}
